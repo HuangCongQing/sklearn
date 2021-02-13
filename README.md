@@ -14,8 +14,11 @@ sklearn安装版本：0.24
 ### 菜菜的机器学习sklearn
 
 * 视频：https://www.bilibili.com/video/BV1vJ41187hk
-* 代码：
+* 代码：[菜菜的机器学习sklearn](菜菜的机器学习sklearn)
   * 参考代码:https://github.com/ys1305/sklearn-ml
+  * 决策树
+  * 随机森林
+  *
 * PPT：[PPT](菜菜的sklearn直播课件)
 
 ### 莫凡视频教程
