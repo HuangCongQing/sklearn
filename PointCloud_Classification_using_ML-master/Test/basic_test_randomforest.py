@@ -1,3 +1,12 @@
+'''
+Description: 
+Author: HCQ
+Company(School): UCAS
+Email: 1756260160@qq.com
+Date: 2021-05-23 18:53:02
+LastEditTime: 2021-05-23 18:59:38
+FilePath: /sklearn/PointCloud_Classification_using_ML-master/Test/basic_test_randomforest.py
+'''
 # encoding=utf-8
 
 ##############################
@@ -20,12 +29,12 @@ feature_matrix = np.loadtxt('/media/shao/TOSHIBA EXT/data_object_velodyne/featur
 data = feature_matrix[:, :-1]
 target = feature_matrix[:, -1]
 
-# load the trained model
+# load the trained model加载模型文件
 rfc = joblib.load(MODEL_DIR)
 
-# prediction / test
+# prediction / test 得到各种参数  accuracy，confusion，precision，log
 y_pred = rfc.predict(data)
-score = metrics.accuracy_score(target, y_pred)
+score = metrics.accuracy_score(target, y_pred) # 得到score
 print('accuracy score = ', score)
 conf_matrix = metrics.confusion_matrix(target, y_pred, [0,1,2,3,4])
 print('confusion matrix = ')

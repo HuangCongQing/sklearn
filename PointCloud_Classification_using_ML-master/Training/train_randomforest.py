@@ -1,3 +1,12 @@
+'''
+Description: 
+Author: HCQ
+Company(School): UCAS
+Email: 1756260160@qq.com
+Date: 2021-05-23 18:53:02
+LastEditTime: 2021-05-23 18:57:09
+FilePath: /sklearn/PointCloud_Classification_using_ML-master/Training/train_randomforest.py
+'''
 # encoding=utf-8
 
 #######################
@@ -49,7 +58,7 @@ clf = GridSearchCV (
                         iid=True,
                         refit=True
                     )
-clf.fit(data, target)
+clf.fit(data, target) # 训练数据
 
 # print important info
 # print(rfc.feature_importances_)
@@ -62,4 +71,4 @@ print('best score', clf.grid_scores_[clf.best_index_])
 
 # save the trained model
 from sklearn.externals import joblib
-joblib.dump(clf, 'rf.pkl')
+joblib.dump(clf, 'rf.pkl') # 保存模型参数
