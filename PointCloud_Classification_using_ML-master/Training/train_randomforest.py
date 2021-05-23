@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-05-23 18:53:02
-LastEditTime: 2021-05-23 18:57:09
+LastEditTime: 2021-05-23 20:10:04
 FilePath: /sklearn/PointCloud_Classification_using_ML-master/Training/train_randomforest.py
 '''
 # encoding=utf-8
@@ -71,4 +71,4 @@ print('best score', clf.grid_scores_[clf.best_index_])
 
 # save the trained model
 from sklearn.externals import joblib
-joblib.dump(clf, 'rf.pkl') # 保存模型参数
+joblib.dump(clf, 'rf20210523.pkl') # 保存模型参数
