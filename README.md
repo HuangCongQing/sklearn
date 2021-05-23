@@ -35,3 +35,10 @@ sklearn安装版本：0.24
 视频：https://www.bilibili.com/video/av17003173/?p=3
 
 代码：
+
+
+### 点云机器学习sklearn
+
+参考代码：[shaozhenghan](https://github.com/shaozhenghan)/[PointCloud_Classification_using_ML](https://github.com/shaozhenghan/PointCloud_Classification_using_ML)
+
+代码：
