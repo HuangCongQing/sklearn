@@ -4,7 +4,7 @@ Author: HCQ
 Company(School): UCAS
 Email: 1756260160@qq.com
 Date: 2021-05-23 18:53:02
-LastEditTime: 2021-05-23 20:10:04
+LastEditTime: 2021-05-23 21:25:10
 FilePath: /sklearn/PointCloud_Classification_using_ML-master/Training/train_randomforest.py
 '''
 # encoding=utf-8
@@ -19,7 +19,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import fbeta_score, make_scorer
 
 # load data for training
-feature_matrix = np.loadtxt('/media/shao/TOSHIBA EXT/data_object_velodyne/feature_matrix_with_label/train/data/r_0.16.txt')
+feature_matrix = np.loadtxt('/home/hcq/data/KITTI_Detection/cutObject/train.txt')
 print('the shape of the loaded feature matrix is ', feature_matrix.shape)
 data = feature_matrix[:, :-1]
 target = feature_matrix[:, -1]
@@ -71,4 +71,4 @@ print('best score', clf.grid_scores_[clf.best_index_])
 
 # save the trained model
 from sklearn.externals import joblib
-joblib.dump(clf, 'rf20210523.pkl') # 保存模型参数
+joblib.dump(clf, '/home/hcq/python/sklearn/PointCloud_Classification_using_ML-master/Training/rf20210523.pkl') # 保存模型参数
